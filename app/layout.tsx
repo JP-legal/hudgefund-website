@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
@@ -66,6 +67,11 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Script
+          src="https://api.app.vai.gt-ai.io/static/embed/v2.js"
+          data-embed-id="I-YTQIjoSL414A"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
