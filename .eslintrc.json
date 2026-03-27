@@ -1,0 +1,1 @@
+{\n  "extends": [\n    "next/babel",\n    "plugin:react/recommended",\n    "plugin:jsx-a11y/recommended",\n    "plugin:import/errors",\n    "plugin:import/warnings"\n  ],\n  "settings": {\n    "react": {\n      "version": "detect"\n    }\n  },\n  "rules": {\n    "react/react-in-jsx-scope": "off"\n  }\n}
